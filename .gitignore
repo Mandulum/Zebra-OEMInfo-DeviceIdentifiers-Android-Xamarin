@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/Zebra-OEMInfo-DeviceIdentifiers-Android-Xamarin/.vs/Zebra-OEMInfo-DeviceIdentifiers-Android-Xamarin/v16
+/Zebra-OEMInfo-DeviceIdentifiers-Android-Xamarin/Zebra-OEMInfo-DeviceIdentifiers-Android-Xamarin/obj
