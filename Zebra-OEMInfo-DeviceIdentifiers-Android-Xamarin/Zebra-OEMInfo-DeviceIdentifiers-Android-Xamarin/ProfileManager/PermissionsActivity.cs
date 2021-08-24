@@ -1,5 +1,4 @@
 using System;
-using Android;
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -8,6 +7,7 @@ using AndroidX.AppCompat.App;
 using ProfileManager;
 using Symbol.XamarinEMDK;
 using Utilities;
+using Zebra_OEMInfo_DeviceIdentifiers_Android_Xamarin;
 
 public class PermissionsActivity : AppCompatActivity, OnProfileApplied, EMDKManager.IEMDKListener
 {

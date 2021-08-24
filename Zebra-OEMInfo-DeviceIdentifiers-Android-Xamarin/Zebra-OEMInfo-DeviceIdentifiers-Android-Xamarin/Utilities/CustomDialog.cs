@@ -1,6 +1,5 @@
 
 using System;
-using Android;
 using Android.App;
 using Android.Content;
 using Android.Graphics;
@@ -8,6 +7,7 @@ using Android.Graphics.Drawables;
 using Android.Views;
 using Android.Widget;
 using AndroidX.Core.Content;
+using Zebra_OEMInfo_DeviceIdentifiers_Android_Xamarin;
 
 namespace Utilities
 {
@@ -32,10 +32,10 @@ namespace Utilities
             View customDialogView = LayoutInflater.From(cx).Inflate(Resource.Layout.layout_custom_dialog, null);
 
             // Get View Components
-            RelativeLayout headerLayout = customDialogView.FindViewById(Resource.Id.header_layout);
-            ImageView headerIcon = customDialogView.FindViewById(Resource.Id.header_icon);
-            TextView titleView = customDialogView.FindViewById(Resource.Id.title);
-            TextView messageView = customDialogView.FindViewById(Resource.Id.message);
+            RelativeLayout headerLayout = customDialogView.FindViewById<RelativeLayout>(Resource.Id.header_layout);
+            ImageView headerIcon = customDialogView.FindViewById<ImageView>(Resource.Id.header_icon);
+            TextView titleView = customDialogView.FindViewById<TextView>(Resource.Id.title);
+            TextView messageView = customDialogView.FindViewById<TextView>(Resource.Id.message);
 
             // Set Component Values
             headerLayout.SetBackgroundColor(GetHeaderColor(cx, type));
@@ -62,10 +62,10 @@ namespace Utilities
             View customDialogView = LayoutInflater.From(cx).Inflate(Resource.Layout.layout_custom_dialog, null);
 
             // Get View Components
-            RelativeLayout headerLayout = customDialogView.FindViewById(Resource.Id.header_layout);
-            ImageView headerIcon = customDialogView.FindViewById(Resource.Id.header_icon);
-            TextView titleView = customDialogView.FindViewById(Resource.Id.title);
-            TextView messageView = customDialogView.FindViewById(Resource.Id.message);
+            RelativeLayout headerLayout = customDialogView.FindViewById<RelativeLayout>(Resource.Id.header_layout);
+            ImageView headerIcon = customDialogView.FindViewById<ImageView>(Resource.Id.header_icon);
+            TextView titleView = customDialogView.FindViewById<TextView>(Resource.Id.title);
+            TextView messageView = customDialogView.FindViewById<TextView>(Resource.Id.message);
 
             // Set Component Values
             headerLayout.SetBackgroundColor(GetHeaderColor(cx, type));
@@ -90,8 +90,8 @@ namespace Utilities
             View customDialogView = LayoutInflater.From(cx).Inflate(Resource.Layout.layout_loading_dialog, null);
 
             // Get View Components
-            ProgressBar progressBar = customDialogView.FindViewById(Resource.Id.progress_bar);
-            TextView messageView = customDialogView.FindViewById(Resource.Id.message);
+            ProgressBar progressBar = customDialogView.FindViewById<ProgressBar>(Resource.Id.progress_bar);
+            TextView messageView = customDialogView.FindViewById<TextView>(Resource.Id.message);
 
             // Set View
             messageView.SetText(message, TextView.BufferType.Normal);

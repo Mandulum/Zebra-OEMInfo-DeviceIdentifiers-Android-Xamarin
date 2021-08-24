@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using Android;
 using Android.App;
 using Android.Content;
 using Android.Database;
 using Android.OS;
 using Utilities;
+using Zebra_OEMInfo_DeviceIdentifiers_Android_Xamarin;
 using AndroidUri = Android.Net.Uri;
 
 namespace DeviceIdentifierManager
