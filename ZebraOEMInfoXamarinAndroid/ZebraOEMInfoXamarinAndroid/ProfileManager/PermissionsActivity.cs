@@ -7,7 +7,7 @@ using AndroidX.AppCompat.App;
 using ProfileManager;
 using Symbol.XamarinEMDK;
 using Utilities;
-using Zebra_OEMInfo_DeviceIdentifiers_Android_Xamarin;
+using ZebraOEMInfoXamarinAndroid;
 
 public class PermissionsActivity : AppCompatActivity, OnProfileApplied, EMDKManager.IEMDKListener
 {

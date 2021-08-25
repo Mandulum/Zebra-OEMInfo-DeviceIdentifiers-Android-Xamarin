@@ -1,16 +1,14 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
-using Android.App;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Zebra_OEMInfo_DeviceIdentifiers_Android_Xamarin")]
+[assembly: AssemblyTitle("ZebraOEMInfoXamarinAndroid")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Zebra_OEMInfo_DeviceIdentifiers_Android_Xamarin")]
+[assembly: AssemblyProduct("ZebraOEMInfoXamarinAndroid")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

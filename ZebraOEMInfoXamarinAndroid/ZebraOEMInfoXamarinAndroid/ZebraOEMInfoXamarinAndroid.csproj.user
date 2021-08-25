@@ -5,5 +5,6 @@
     <ActiveDebugProfile>Zebra Technologies TC77</ActiveDebugProfile>
     <AndroidDesignerPreferredTheme>AppTheme</AndroidDesignerPreferredTheme>
     <AndroidDesignerPreferredDevice>Nexus 4</AndroidDesignerPreferredDevice>
+    <DefaultDevice>dev_device_-_android_9_0</DefaultDevice>
   </PropertyGroup>
 </Project>

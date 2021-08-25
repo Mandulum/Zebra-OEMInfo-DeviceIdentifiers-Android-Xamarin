@@ -9,9 +9,9 @@ using DeviceIdentifierManager;
 using Utilities;
 using AndroidUri = Android.Net.Uri;
 
-namespace Zebra_OEMInfo_DeviceIdentifiers_Android_Xamarin
+namespace ZebraOEMInfoXamarinAndroid
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
+    [Activity(Name = "com.zebra.molmstead.getdeviceidentifiers.mainactivity", Label = "@string/app_name", Theme = "@style/Theme.AppCompat.Light.NoActionBar", MainLauncher = true)]
     public class MainActivity : AppCompatActivity, RetrieveOemInfo.OnOemInfoRetrievedListener, PermissionsHelper.OnPermissionsResultListener
     {
         // Debugging

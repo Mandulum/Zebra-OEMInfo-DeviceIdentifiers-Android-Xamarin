@@ -5,7 +5,7 @@ using Android.Content;
 using Android.Database;
 using Android.OS;
 using Utilities;
-using Zebra_OEMInfo_DeviceIdentifiers_Android_Xamarin;
+using ZebraOEMInfoXamarinAndroid;
 using AndroidUri = Android.Net.Uri;
 
 namespace DeviceIdentifierManager

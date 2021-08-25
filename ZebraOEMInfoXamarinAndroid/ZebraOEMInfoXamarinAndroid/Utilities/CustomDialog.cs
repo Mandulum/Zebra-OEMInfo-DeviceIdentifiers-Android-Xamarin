@@ -7,7 +7,7 @@ using Android.Graphics.Drawables;
 using Android.Views;
 using Android.Widget;
 using AndroidX.Core.Content;
-using Zebra_OEMInfo_DeviceIdentifiers_Android_Xamarin;
+using ZebraOEMInfoXamarinAndroid;
 
 namespace Utilities
 {

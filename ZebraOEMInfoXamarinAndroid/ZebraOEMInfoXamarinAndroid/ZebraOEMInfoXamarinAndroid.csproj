@@ -10,8 +10,8 @@
     <TemplateGuid>{84dd83c5-0fe3-4294-9419-09e7c8ba324f}</TemplateGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Zebra_OEMInfo_DeviceIdentifiers_Android_Xamarin</RootNamespace>
-    <AssemblyName>Zebra-OEMInfo-DeviceIdentifiers-Android-Xamarin</AssemblyName>
+    <RootNamespace>ZebraOEMInfoXamarinAndroid</RootNamespace>
+    <AssemblyName>ZebraOEMInfoXamarinAndroid</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <Deterministic>True</Deterministic>
     <AndroidApplication>True</AndroidApplication>
@@ -72,6 +72,7 @@
     <Compile Include="ProfileManager\ProcessProfile.cs" />
     <Compile Include="ProfileManager\XML.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Utilities\CustomDialog.cs" />
     <Compile Include="Utilities\PackageManagerHelper.cs" />
     <Compile Include="Utilities\PermissionsHelper.cs" />
