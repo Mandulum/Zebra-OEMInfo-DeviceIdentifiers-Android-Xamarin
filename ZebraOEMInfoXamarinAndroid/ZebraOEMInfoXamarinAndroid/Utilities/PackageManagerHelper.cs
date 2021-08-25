@@ -1,7 +1,4 @@
-
-
 using System.Linq;
-using System.Text;
 using Android.Content;
 using Android.Content.PM;
 using Android.OS;
@@ -11,19 +8,14 @@ namespace Utilities
 {
     public class PackageManagerHelper
     {
-
         public static string GetSigningCertBase64(Context cx)
         {
-            //convert String to char array (1st step)
-            char[] charArray = GetSigningCertificateHex(cx)[0].ToChars();
+            //convert hex sig to byte array (1st step)
+            byte[] byteArray = GetSigningCertificateHex(cx)[0].ToByteArray();
 
-            // decode the char array to byte[] (2nd step)
-            //byte[] decodedHex = Hex.decodeHex(charArray);
-            byte[] decodedHex = Encoding.ASCII.GetBytes(charArray);
-
-            // The String decoded to Base64 (3rd step)
-            // return Base64.encodeBase64String(decodedHex); -> Throws error on Android 8
-            return Base64.EncodeToString(decodedHex, Base64Flags.NoWrap);
+            // The String decoded to Base64 (2nd step)
+            // return Base64.encodeBase64String(byteArray); -> Throws error on Android 8
+            return Base64.EncodeToString(byteArray, Base64Flags.NoWrap);
         }
 
         public static Signature[] GetSigningCertificateHex(Context cx)
