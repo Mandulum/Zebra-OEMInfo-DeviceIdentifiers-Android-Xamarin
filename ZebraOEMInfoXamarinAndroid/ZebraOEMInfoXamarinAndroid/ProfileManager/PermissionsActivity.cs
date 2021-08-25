@@ -9,6 +9,7 @@ using Symbol.XamarinEMDK;
 using Utilities;
 using ZebraOEMInfoXamarinAndroid;
 
+[Activity(Label = "@string/permissions_dialog_title")]
 public class PermissionsActivity : AppCompatActivity, OnProfileApplied, EMDKManager.IEMDKListener
 {
 

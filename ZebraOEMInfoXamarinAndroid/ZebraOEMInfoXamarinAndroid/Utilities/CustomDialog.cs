@@ -6,7 +6,6 @@ using Android.Graphics;
 using Android.Graphics.Drawables;
 using Android.Views;
 using Android.Widget;
-using AndroidX.Core.Content;
 using ZebraOEMInfoXamarinAndroid;
 
 namespace Utilities
@@ -121,7 +120,7 @@ namespace Utilities
                     color = cx.GetColor(Resource.Color.error);
                     break;
             }
-            return new Color(ContextCompat.GetColor(cx, color));
+            return new Color(color);
         }
 
         private static Drawable GetHeaderIcon(Context cx, DialogType type)
