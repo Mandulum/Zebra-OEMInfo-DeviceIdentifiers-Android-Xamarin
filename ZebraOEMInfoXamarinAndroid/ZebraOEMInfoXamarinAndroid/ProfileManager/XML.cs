@@ -21,33 +21,33 @@ namespace ProfileManager
 
         public string GetSerialPermissionXml()
         {
-            return "<wap-provisioningdoc>\n" +
-                    "  <characteristic type=\"Profile\">\n" +
-                    "    <parm name=\"ProfileName\" value=\"SerialPermission\"/>\n" +
-                    "    <characteristic version=\"8.3\" type=\"AccessMgr\">\n" +
-                    "      <parm name=\"OperationMode\" value=\"1\" />\n" +
-                    "      <parm name=\"ServiceAccessAction\" value=\"4\" />\n" +
-                    "      <parm name=\"ServiceIdentifier\" value=\"content://oem_info/oem.zebra.secure/build_serial\" />\n" +
-                    "      <parm name=\"CallerPackageName\" value=" + '"' + mPackageName + '"' + " />\n" +
-                    "      <parm name=\"CallerSignature\" value=" + '"' + mPackageSignatureHex + '"' + "  />\n" +
-                    "    </characteristic>\n" +
-                    "  </characteristic>\n" +
+            return "<wap-provisioningdoc>" +
+                    "  <characteristic type=\"Profile\">" +
+                    "    <parm name=\"ProfileName\" value=\"SerialPermission\"/>" +
+                    "    <characteristic version=\"8.3\" type=\"AccessMgr\">" +
+                    "      <parm name=\"OperationMode\" value=\"1\" />" +
+                    "      <parm name=\"ServiceAccessAction\" value=\"4\" />" +
+                    "      <parm name=\"ServiceIdentifier\" value=\"content://oem_info/oem.zebra.secure/build_serial\" />" +
+                    "      <parm name=\"CallerPackageName\" value=" + '"' + mPackageName + '"' + " />" +
+                    "      <parm name=\"CallerSignature\" value=" + '"' + mPackageSignatureHex + '"' + "  />" +
+                    "    </characteristic>" +
+                    "  </characteristic>" +
                     "</wap-provisioningdoc>";
         }
 
         public string GetImeiPermissionXml()
         {
-            return "<wap-provisioningdoc>\n" +
-                    "  <characteristic type=\"Profile\">\n" +
-                    "    <parm name=\"ProfileName\" value=\"ImeiPermission\"/>\n" +
-                    "    <characteristic version=\"8.3\" type=\"AccessMgr\">\n" +
-                    "      <parm name=\"OperationMode\" value=\"1\" />\n" +
-                    "      <parm name=\"ServiceAccessAction\" value=\"4\" />\n" +
-                    "      <parm name=\"ServiceIdentifier\" value=\"content://oem_info/wan/imei\" />\n" +
-                    "      <parm name=\"CallerPackageName\" value=" + '"' + mPackageName + '"' + " />\n" +
-                    "      <parm name=\"CallerSignature\" value=" + '"' + mPackageSignatureHex + '"' + "  />\n" +
-                    "    </characteristic>\n" +
-                    "  </characteristic>\n" +
+            return "<wap-provisioningdoc>" +
+                    "  <characteristic type=\"Profile\">" +
+                    "    <parm name=\"ProfileName\" value=\"ImeiPermission\"/>" +
+                    "    <characteristic version=\"8.3\" type=\"AccessMgr\">" +
+                    "      <parm name=\"OperationMode\" value=\"1\" />" +
+                    "      <parm name=\"ServiceAccessAction\" value=\"4\" />" +
+                    "      <parm name=\"ServiceIdentifier\" value=\"content://oem_info/wan/imei\" />" +
+                    "      <parm name=\"CallerPackageName\" value=" + '"' + mPackageName + '"' + " />" +
+                    "      <parm name=\"CallerSignature\" value=" + '"' + mPackageSignatureHex + '"' + "  />" +
+                    "    </characteristic>" +
+                    "  </characteristic>" +
                     "</wap-provisioningdoc>";
         }
     }
